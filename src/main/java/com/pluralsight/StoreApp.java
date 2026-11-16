@@ -12,11 +12,9 @@ public class StoreApp {
 
     public static void main(String[] args) {
 
-
-
-
         // this method loads product objects into inventory
         loadInventory();
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("What item # are you interested in? ");
         int id = scanner.nextInt();

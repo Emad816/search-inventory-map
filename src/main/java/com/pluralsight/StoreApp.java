@@ -18,7 +18,9 @@ public class StoreApp {
         Scanner scanner = new Scanner(System.in);
         System.out.print("What item # are you interested in? ");
         int id = scanner.nextInt();
+
         Product matchedProduct = inventory.get(id);
+
         if (matchedProduct == null) {
             System.out.println("We don't carry that product");
             return;
